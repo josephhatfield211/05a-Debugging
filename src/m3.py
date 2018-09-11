@@ -42,7 +42,6 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 def main():
     """ Calls the   TEST   functions in this module. """
     run_test_broken_1()
-
 ########################################################################
 # Students:
 #   Do NOT touch the following  is_prime  function - it has no TO DO.
@@ -121,12 +120,14 @@ def broken_1(m):
     #    **  For full credit you must appropriately
     #    **  use (call) the   is_prime   function that is DEFINED ABOVE.
     count = 0
-    for k in range(2 * m):
-        if is_prime(m):
+    y = m
+    for k in range((2*m+1)-m+1):
+        if is_prime(y):
             count = count + 1
+        y = y+1
     return count
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
 # ----------------------------------------------------------------------
-    main()
+main()
