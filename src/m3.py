@@ -11,7 +11,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 ########################################################################
 #
-# TODO: 2. READ these instructions, ASKING QUESTIONS as needed.
+# done: 2. READ these instructions, ASKING QUESTIONS as needed.
 #
 #   This module contains "broken" functions, as in m1 and m2.
 #   FOLLOW THE SAME STEPS as in the instructions of m1.py
@@ -41,7 +41,7 @@ Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
 
 def main():
     """ Calls the   TEST   functions in this module. """
-
+    run_test_broken_1()
 
 ########################################################################
 # Students:
@@ -124,7 +124,7 @@ def broken_1(m):
     for k in range(2 * m):
         if is_prime(m):
             count = count + 1
-
+    return count
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
